@@ -1,0 +1,263 @@
+.max-grid-height {
+  height: calc(75vh);
+  /* min-height: 100vh */
+}
+
+// Font Size
+.e-grid * {
+  font-size: 14px !important;
+  // height: 30px;
+}
+
+// Header
+.e-grid .e-gridheader {
+  font-family: ClanOT;
+  border-bottom:1px solid rgb(231, 230, 230)
+}
+.e-grid .e-headercell {
+  color: rgb(51, 49, 49);
+}
+.e-grid .e-rowcell,
+.e-grid .e-headercell {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.e-grid .e-headercell.customColumn {
+  background-color: #2382c3;
+  color: white;
+}
+
+// Pager
+.e-grid .e-gridpager {
+  font-family: ClanOT;
+}
+// .e-grid .e-gridpager .e-numericitem {
+//     border-radius: initial;
+// }
+.e-grid .e-gridpager .e-currentitem {
+    background-color: $secondary;
+}
+// .e-grid .e-gridpager .e-prevpagedisabled,
+// .e-grid .e-gridpager .e-prevpage,
+// .e-grid .e-gridpager .e-nextpage,
+// .e-grid .e-gridpager .e-nextpagedisabled,
+// .e-grid .e-gridpager .e-lastpagedisabled,
+// .e-grid .e-gridpager .e-lastpage,
+// .e-grid .e-gridpager .e-firstpage,
+// .e-grid .e-gridpager .e-firstpagedisabled {
+//     background-color: #deecf9;
+// }
+
+// Disabled Columns
+.e-grid .e-rowcell.disabledColumnCss {
+  background-color: #ecedee;
+}
+
+.e-grid .e-headercell.disabledColumnCss {
+  background-color: #ecedee;
+  color: rgb(51, 49, 49);
+}
+
+
+
+// Filter
+// .e-grid .e-icon-filter::before {
+//   content: "\ea77";
+// }
+
+.e-grid .e-icon-filter::before,
+.e-grid .e-icon-filter.e-filtered::before {
+  content: '\ea77';
+}
+
+// .e-grid .e-filter-popup {
+//       font-family: ClanOT;
+// }
+// .e-grid .e-filter-popup .e-input-group input.e-input{
+//   font-family: ClanOT;
+// }
+// .e-grid .e-filter-popup .e-btn{
+//       font-family: ClanOT;
+// }
+// .e-grid .e-filter-popup .e-contextmenu-wrapper ul{
+//       font-family: ClanOT;
+// }
+
+// Grouping
+.e-grid .e-groupdroparea {
+    font-family: ClanOT;
+    background-color: #b580d1;
+}
+
+// .e-grid .e-groupcaption {
+//     background-color: #deecf9;
+// }
+// .e-grid .e-recordplusexpand,
+// .e-grid .e-recordpluscollapse {
+//     background-color: #deecf9;
+// }
+// .e-grid .e-indentcell {
+//     background-color: #deecf9;
+// }
+
+// Sorting Icon
+.e-grid .e-sortnumber {
+  background-color: #deecf9;
+  font-family: ClanOT;
+}
+// .e-grid .e-icon-ascending::before {
+//     content: '\e306';
+// }
+// .e-grid .e-icon-ascending::before {
+//     content: '\e304';
+// }
+
+// Selection
+// .e-grid td.e-selectionbackground {
+//     background-color: #deecf9;
+// }
+
+// Editing
+// .e-grid .e-editedrow table,
+// .e-grid .e-addedrow table {
+//   background-color: #512d6d;
+// }
+
+// Grid Icons
+.e-dbi:before {
+  content: "\ec0d";
+  color: #1d3557;
+  float: right;
+}
+
+.e-button {
+  font-size: 12px;
+}
+
+.e-preview:before {
+  content: "\e345";
+}
+
+.e-sel:before {
+  content: "\e718";
+}
+
+.e-task:before {
+  content: "\ec26";
+}
+
+// .e-sn:before {
+//   content: "\e509";
+// }
+
+.e-edit:before {
+  content: "\e891";
+}
+
+.e-assign:before {
+  content: "\e302";
+}
+
+.loadout:before {
+  content: "\e677";
+}
+
+
+
+.e-saveCustom:before {
+  content: "\e735";
+}
+
+// Disabled Columns
+.e-grid .e-rowcell.disabledColumnCss {
+  background-color: #ecedee;
+}
+
+.e-grid .e-headercell.disabledColumnCss {
+  background-color: #ecedee;
+  color: rgb(51, 49, 49);
+}
+
+
+// Fixed Last Column
+.e-headercell.e-lastcell.last-cell-commands {
+  position: sticky;
+  top: 65px;
+  right: 0;
+}
+
+.e-rowcell.last-cell-commands {
+  position: sticky;
+  right: 0;
+  background-color: #fff!important;
+  display: block;
+  width: 105px;
+}
+
+.e-grid .e-columnheader .e-icons.e-columnmenu::before {
+  content: "\e984";
+}
+
+// SEL Custom Rows
+.cancelled-line {
+  background-color: #eae2b7;
+  text-decoration: line-through;
+}
+
+.completed-line {
+  background-color: #c7f9cc;
+}
+
+.e-grid .e-rowcell.highlight-cell {
+  background-color: lightgoldenrodyellow;
+  /* color:yellow;  */
+}
+
+.e-grid .highlight-row {
+  background-color: lightgoldenrodyellow;
+  /* color:yellow;  */
+}
+
+
+// Schedule
+.new:before {
+  content: "\e7f9";
+}
+
+.batch-edit:before {
+  content: "\ec26";
+}
+
+.time-off:before {
+  content: "\e31d";
+}
+
+.quarantine:before {
+  content: "\e30c";
+}
+
+.validate:before {
+  content: "\ea84";
+}
+
+.resave:before {
+  content: "\e308";
+}
+
+.resavecalloff:before {
+  content: "\e735";
+}
+
+.add-above:before {
+  /* color: #00ffff; */
+  content: "\e658";
+}
+.add-below:before {
+  content: "\e659";
+}
+.add-copy:before {
+  content: "\e4a4";
+}
+.add-child:before {
+  content: "\e19c";
+}
