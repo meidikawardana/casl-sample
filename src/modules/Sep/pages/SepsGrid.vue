@@ -5,15 +5,13 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" />
 
         <q-toolbar-title> SEP </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
     <q-page-container>
       <q-page padding>
     <my-toolbar>
-      <my-create-button v-show='$can("create", "Sep")' id='btn-sep-create' tooltip='Create SEP' @click='onCreate' />
+      <my-create-button v-show='$ability.can("create", "Sep")' id='btn-sep-create' tooltip='Create SEP' @click='onCreate' />
       <q-separator dark inset vertical />
       <q-separator dark inset vertical />
     </my-toolbar>
@@ -23,11 +21,12 @@
 </template>
 
 <script lang="ts">
-import { mapState } from 'pinia'
 import { defineComponent } from 'vue'
+import AbilityState from 'src/modules/Application/mixins/AbilityState'
 
 export default defineComponent({
   name: 'ServicesExecutionPlan',
+  mixins: [AbilityState],
   data() {
     return {
       sepId: 0 as number,
@@ -39,6 +38,10 @@ export default defineComponent({
     height() {
       return this.$q.screen.height - 350 + 'px'
     },
+  },
+  created() {
+    const c = this.$ability.can("create", "Sep")
+    console.log('--can.Create.SEP in component', c)
   },
   methods: {
     onCreate() {

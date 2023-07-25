@@ -1,24 +1,12 @@
 import { abilitiesPlugin } from '@casl/vue'
 import { boot } from 'quasar/wrappers'
 import defineAbilityFor from 'src/app/abilities/abilities'
+import AdminUser from 'src/app/configs/AdminUser.json'
 
 // Sets User Permissions
 export default boot(async ({ app }) => {
-  const user = {
-    "id": 5,
-    "deleted_at": null,
-    "roles": [
-        {
-            "id": 2,
-            "name": "admin",
-        }
-    ],
-  }
+  console.log('--user initial', AdminUser)
 
-  console.log('--user', user)
-
-  app.use(abilitiesPlugin, defineAbilityFor(user), {
-    useGlobalProperties: true,
-  })
+  app.use(abilitiesPlugin, defineAbilityFor(AdminUser))
 
 })
