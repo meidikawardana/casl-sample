@@ -1,6 +1,6 @@
-# Gantt Sample (gantt-sample)
+# CASL Sample (casl-sample)
 
-Sample Casl v6 Bug Showcase
+Sample CASL v6 Bug Showcase
 
 ## Install the dependencies
 
