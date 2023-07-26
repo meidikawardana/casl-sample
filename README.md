@@ -1,6 +1,6 @@
 # Gantt Sample (gantt-sample)
 
-Sample for Gantt Syncfusion Bug Showcase
+Sample Casl v6 Bug Showcase
 
 ## Install the dependencies
 
