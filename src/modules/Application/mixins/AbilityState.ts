@@ -1,6 +1,6 @@
 import defineAbilityFor from 'src/app/abilities/abilities'
 import { ABILITY_TOKEN } from '@casl/vue'
-import GuestUser from 'src/app/configs/GuestUser.json'
+import AdminUser from 'src/app/configs/AdminUser.json'
 
 export default {
   inject: {
@@ -33,9 +33,9 @@ export default {
         await this.sleep(1000)
       }
 
-      console.log('--user update', GuestUser)
+      console.log('--user update', AdminUser)
       console.log('Ability update')
-      this.$ability = (defineAbilityFor(GuestUser))
+      this.$ability.update(defineAbilityFor(AdminUser))
       const c = this.$ability.can("create", "Sep")
       console.log('--can.Create.SEP in state', c)
     },
